@@ -76,7 +76,7 @@ WHERE unit_price =
 
 --Find products in the most expensive category.
 select * from products where 
-category_id=
+category_id in
 (select category_id from products where 
 unit_price=(select max(unit_price) from products))
 
