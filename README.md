@@ -261,30 +261,6 @@ Through this project, I am developing practical skills in:
 * Writing readable and maintainable SQL
 * Applying SQL concepts to Data Engineering and Analytics use cases
 
-## 🔄 Project Status
-
-🚧 **In Progress**
-
-Current progress:
-
-* [x] SQL fundamentals
-* [x] Filtering with `WHERE`
-* [x] Sorting with `ORDER BY`
-* [x] Aggregate functions
-* [x] `GROUP BY` and `HAVING`
-* [x] `INNER JOIN`
-* [x] `LEFT JOIN`
-* [x] `RIGHT JOIN`
-* [x] `FULL OUTER JOIN`
-* [ ] `SELF JOIN`
-* [ ] `CROSS JOIN`
-* [ ] `UNION` and `UNION ALL`
-* [ ] Subqueries
-* [ ] CTEs
-* [ ] `CASE WHEN`
-* [ ] Window functions
-* [ ] Advanced business scenarios
-
 ## 👩‍💻 Author
 
 **Sandya Duggana**
