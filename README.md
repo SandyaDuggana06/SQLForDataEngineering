@@ -1,18 +1,25 @@
 # Fabric SQL Mastery
 
-A structured collection of SQL concepts, hands-on exercises, and practical business queries developed in **Microsoft Fabric**.
+A structured collection of 340 hands-on SQL problems, concepts, and practical business scenarios designed for Data Engineering and Data Analytics.
 
-This repository documents my SQL learning journey through progressively challenging exercises, starting with fundamental data retrieval and filtering and moving toward joins, aggregations, subqueries, window functions, and real-world data analysis.
+This repository provides a progressive SQL practice resource, starting with fundamental querying and filtering and moving through joins, aggregations, subqueries, CTEs, window functions, data quality checks, advanced business analysis, and dimensional modeling.
+
+All exercises are practiced using Microsoft Fabric and organized in GitHub so that the repository can be used as a practical SQL reference and interview-preparation resource.
 
 ## 🎯 Project Goals
 
-The goals of this project are to:
+This repository is designed to help learners and aspiring Data Engineers:
 
-* Build a strong foundation in SQL for Data Engineering and Analytics
-* Practice writing clean, readable, and efficient SQL queries
-* Understand how SQL concepts are applied to real-world business scenarios
-* Develop practical experience using SQL in Microsoft Fabric
-* Create a structured SQL portfolio for continuous learning and interview preparation
+Build a strong foundation in SQL
+Develop advanced SQL problem-solving skills
+Practice writing clean, readable, and maintainable SQL
+Apply SQL concepts to realistic business scenarios
+Understand relational data and table relationships
+Practice SQL in a Microsoft Fabric environment
+Develop data-quality and data-reconciliation skills
+Understand SQL patterns commonly used in Data Engineering and Analytics
+Prepare for SQL and Data Engineering interviews
+Build a reusable SQL practice and reference resource
 
 ## 🛠️ Technologies Used
 
@@ -38,94 +45,307 @@ The exercises use a fictional retail and e-commerce dataset containing the follo
 | `returns`                  | Product return details, return reasons, and refund amounts              |
 | `customer_support_tickets` | Customer support requests, categories, and priorities                   |
 
-## 📚 SQL Topics Covered
+📚 SQL Topics Covered
 
-### 1. SQL Fundamentals
+The repository contains 340 exercises organized from fundamental SQL concepts to advanced Data Engineering scenarios.
 
-* `SELECT`
-* Selecting specific columns
-* Column aliases using `AS`
-* `DISTINCT`
-* `TOP`
-* SQL comments
+1. SQL Fundamentals
+   
+SELECT
+Selecting specific columns
+Column aliases using AS
+DISTINCT
+TOP
+SQL comments
 
-### 2. Filtering Data
+2. WHERE Filtering
 
-* `WHERE`
-* Comparison operators
-* `AND`
-* `OR`
-* `IN`
-* `BETWEEN`
-* `LIKE`
-* Date filtering
-* `IS NULL`
-* `IS NOT NULL`
+WHERE
+Comparison operators
+AND
+OR
+IN
+BETWEEN
+LIKE
+Date filtering
+IS NULL
+IS NOT NULL
 
-### 3. Sorting and Limiting Results
+3. ORDER BY and TOP
+   
+ORDER BY
+Ascending and descending sorting
+Sorting by multiple columns
+TOP
+Finding top and bottom records
 
-* `ORDER BY`
-* Ascending and descending sorting
-* Sorting by multiple columns
-* `TOP`
+4. Aggregate Functions
+COUNT()
+SUM()
+AVG()
+MIN()
+MAX()
 
-### 4. Aggregate Functions
+5. GROUP BY and HAVING
+GROUP BY
+HAVING
+Aggregations by:
+Customer
+Product
+Category
+Country
+Department
+Payment method
+Supplier
 
-* `COUNT()`
-* `SUM()`
-* `AVG()`
-* `MIN()`
-* `MAX()`
+6. SQL Joins
+   
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL OUTER JOIN
+SELF JOIN
+CROSS JOIN
 
-### 5. Grouping and Filtering Aggregated Data
+Practical scenarios include:
 
-* `GROUP BY`
-* `HAVING`
-* Aggregations by customer, product, category, country, department, and payment method
+Finding unmatched records
+Identifying customers without orders
+Identifying products without sales
+Reconciling customers and orders
+Working with employee-manager relationships
 
-### 6. SQL Joins
+7. NULL Handling
+   
+IS NULL
+IS NOT NULL
+COALESCE()
+NULL-safe calculations
+Missing-value analysis
+Understanding NULL behavior in comparisons and joins
+Comparing COUNT(*) and COUNT(column)
 
-* `INNER JOIN`
-* `LEFT JOIN`
-* `RIGHT JOIN`
-* `FULL OUTER JOIN`
-* `SELF JOIN`
-* `CROSS JOIN`
+8. CASE Expressions
+   
+CASE WHEN
+Business categorization
+Customer segmentation
+Product pricing classification
+Stock status classification
+Order value classification
+Payment classification
+Risk categorization
 
-### 7. NULL Handling
+9. UNION and UNION ALL
+    
+UNION
+UNION ALL
+Duplicate handling
+Combining datasets
+Combining transaction types
+Understanding when UNION ALL is preferable
 
-* `IS NULL`
-* `IS NOT NULL`
-* `COALESCE()`
-* Understanding how `NULL` behaves in comparisons and joins
+10. String Functions
 
-### 8. Set Operations
+UPPER()
+LOWER()
+LEN()
+LEFT()
+LIKE
+CHARINDEX()
+CONCAT()
+TRIM()
+REPLACE()
+String extraction and standardization
 
-* `UNION`
-* `UNION ALL`
-* Understanding duplicate handling
+Practical scenarios include:
 
-### 9. Advanced SQL
+Extracting email domains
+Standardizing customer names
+Creating business labels
+Searching product names
+Creating employee identifiers
 
-Planned topics include:
+11. Date Functions
+Extracting year and month
+Date filtering
+Date differences
+Monthly analysis
+Quarterly analysis
+Customer signup analysis
+Order-date analysis
+Support-ticket resolution time
 
-* Subqueries
-* Common Table Expressions (CTEs)
-* `CASE WHEN`
-* Window functions
-* `ROW_NUMBER()`
-* `RANK()`
-* `DENSE_RANK()`
-* Running totals
-* Moving averages
-* Data quality checks
-* SQL-based data reconciliation
+12. Subqueries
 
-## 🧩 Example Queries
+Practical subquery scenarios include:
 
-### Find customers who have never placed an order
+Products above average price
+Employees above average salary
+Customers above average spending
+Second-highest values
+Highest-paid employees by department
+Lowest-priced products by category
+Customers with and without orders
+EXISTS
+NOT EXISTS
 
-```sql
+13. Common Table Expressions — CTEs
+    
+Single CTEs
+Sequential CTEs
+Multi-step transformations
+Customer sales analysis
+Product profitability
+Monthly sales
+Customer order counts
+Data-quality analysis
+Ranking using CTEs
+
+CTEs are used to break complex SQL problems into smaller, readable transformation steps.
+
+14. Window Functions
+ROW_NUMBER()
+RANK()
+DENSE_RANK()
+LAG()
+LEAD()
+NTILE()
+PARTITION BY
+Running totals
+Cumulative calculations
+Moving averages
+Month-over-month analysis
+Top-N analysis
+Deduplication
+
+Practical scenarios include:
+
+Top employees by department
+Top products by category
+First and latest customer orders
+Salary comparisons
+Running sales totals
+Rolling three-month averages
+Customer spending segmentation
+
+15. Advanced Business Analysis
+
+The repository includes practical business questions such as:
+
+Top customers by sales
+Top products by revenue
+Best-selling products
+Gross profit
+Gross profit by category
+Gross profit by country
+Average order value
+Customer lifetime value
+Repeat-customer rate
+Product return rate
+Customer return analysis
+Payment reconciliation
+Cancelled orders with successful payments
+Completed orders without payments
+Cross-category purchasing behavior
+
+16. Data Quality and Data Engineering Checks
+
+Practical data-quality scenarios include:
+
+Duplicate customer emails
+Duplicate product names
+NULL customer IDs
+Invalid product IDs
+Invalid order IDs
+Invalid employee IDs
+Negative prices
+Cost price greater than selling price
+Negative stock
+Future order dates
+Payments before order dates
+Returns before order dates
+Invalid support-ticket dates
+Orders without order items
+Zero-value orders
+Negative payment amounts
+Missing country values
+Missing category IDs
+Payment reconciliation
+Data-quality reporting using UNION ALL
+
+17. DML Practice
+    
+INSERT
+UPDATE
+DELETE
+INSERT INTO ... SELECT
+Transactions
+
+Practical scenarios include:
+
+Inserting customers and products
+Updating customer information
+Updating stock
+Updating product prices
+Handling missing discounts
+Removing test data
+Deleting invalid or obsolete records
+Loading summary tables
+Performing multiple related changes using transactions
+
+18. Views and Reusable SQL
+
+The repository includes exercises for creating reusable SQL objects such as:
+
+Customer order detail views
+Order-total views
+Monthly sales views
+Customer lifetime value views
+Product profitability views
+Open support-ticket views
+Data-quality views
+Product ranking views
+Customer return-statistics views
+Power BI / semantic-model-ready views
+
+19. Stored Procedures and Parameters
+
+Practice scenarios include:
+
+Procedures using customer IDs
+Date-range procedures
+Sales by country
+Product stock updates
+Customer-sales summary loading
+Top-N customer analysis
+Low-stock products
+Open support tickets
+Monthly sales
+Data-quality checks
+
+20. Data Warehousing and Dimensional Modeling
+
+The repository also introduces SQL concepts used in analytical data warehouses.
+
+Topics include:
+
+Identifying fact tables
+Identifying dimension tables
+Defining table grain
+dim_customer
+dim_product
+dim_employee
+dim_date
+fact_sales
+Loading fact tables
+Sales analysis using fact and dimension tables
+Customer, product, and date dimensions
+Understanding fact-table grain
+Star-schema concepts
+Dimensional modeling
+🧩 Example Queries
+Find customers who have never placed an order
 SELECT
     c.customer_id,
     c.customer_name
@@ -133,11 +353,7 @@ FROM customers AS c
 LEFT JOIN orders AS o
     ON c.customer_id = o.customer_id
 WHERE o.order_id IS NULL;
-```
-
-### Find the best-selling product by quantity
-
-```sql
+Find the best-selling product by quantity
 SELECT TOP 1
     p.product_id,
     p.product_name,
@@ -149,11 +365,7 @@ GROUP BY
     p.product_id,
     p.product_name
 ORDER BY quantity_sold DESC;
-```
-
-### Display every customer and their number of orders
-
-```sql
+Display every customer and their number of orders
 SELECT
     c.customer_id,
     c.customer_name,
@@ -164,11 +376,7 @@ LEFT JOIN orders AS o
 GROUP BY
     c.customer_id,
     c.customer_name;
-```
-
-### Reconcile customers and orders using FULL OUTER JOIN
-
-```sql
+Reconcile customers and orders using FULL OUTER JOIN
 SELECT
     COALESCE(c.customer_id, o.customer_id) AS customer_id,
     c.customer_name,
@@ -189,7 +397,6 @@ SELECT
 FROM customers AS c
 FULL OUTER JOIN orders AS o
     ON c.customer_id = o.customer_id;
-```
 
 ## 📁 Repository Structure
 
@@ -241,31 +448,136 @@ fabric-sql-mastery/
 ## 🚀 How to Use This Repository
 
 1. Create a Warehouse or SQL-enabled environment in Microsoft Fabric.
-2. Run the table creation scripts in the `dataset` folder.
-3. Load the sample data.
+2. Run the table creation scripts, create_tables.sql.
+3. Load the sample data, insert_sample_data.sql.
 4. Open the SQL files by topic.
 5. Attempt the exercises independently.
 6. Review and compare the solutions.
 7. Modify the queries and experiment with additional business questions.
 
-## 💡 Key Learning Outcomes
+🎓 Suggested Learning Path
 
-Through this project, I am developing practical skills in:
+The exercises can be approached progressively:
 
-* Querying and filtering relational data
-* Combining data from multiple tables
-* Performing business-focused aggregations
-* Identifying missing records using outer joins
-* Handling `NULL` values correctly
-* Performing data reconciliation
-* Writing readable and maintainable SQL
-* Applying SQL concepts to Data Engineering and Analytics use cases
+SQL Fundamentals
+       ↓
+Filtering & Sorting
+       ↓
+Aggregations
+       ↓
+GROUP BY & HAVING
+       ↓
+Joins
+       ↓
+NULL Handling
+       ↓
+CASE Expressions
+       ↓
+UNION / UNION ALL
+       ↓
+String & Date Functions
+       ↓
+Subqueries
+       ↓
+CTEs
+       ↓
+Window Functions
+       ↓
+Advanced Business Analysis
+       ↓
+Data Quality & Reconciliation
+       ↓
+DML & Transactions
+       ↓
+Views & Stored Procedures
+       ↓
+Data Warehousing
+       ↓
+Dimensional Modeling
+
+💡 Key Learning Outcomes
+
+This repository provides hands-on practice in:
+
+Querying relational data
+Filtering and transforming data
+Combining multiple tables
+Performing business-focused aggregations
+Handling NULL values
+Identifying unmatched records
+Performing data reconciliation
+Writing complex SQL using CTEs and subqueries
+Applying window functions to analytical problems
+Performing data-quality checks
+Building reusable SQL objects
+Working with transactions
+Understanding fact and dimension tables
+Applying dimensional modeling concepts
+Using SQL within Microsoft Fabric
+
+📌 Who Is This Repository For?
+
+This repository can be useful for:
+
+Aspiring Data Engineers
+Data Analysts
+SQL learners
+Students building SQL portfolios
+Professionals preparing for SQL interviews
+Microsoft Fabric learners
+Anyone looking for hands-on SQL practice
+🔄 Project Status
+✅ Current Coverage
+
+The repository currently contains 340 SQL exercises covering:
+
+SQL fundamentals
+Filtering and sorting
+Aggregate functions
+GROUP BY and HAVING
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL OUTER JOIN
+SELF JOIN
+CROSS JOIN
+NULL handling
+CASE expressions
+UNION and UNION ALL
+String functions
+Date functions
+Subqueries
+CTEs
+Window functions
+Advanced business scenarios
+Data-quality checks
+DML and transactions
+Views
+Stored procedures
+Data warehousing
+Dimensional modeling
+
+The repository will continue to evolve with additional Data Engineering, Microsoft Fabric, analytics, and real-world business scenarios.
+
 
 ## 👩‍💻 Author
 
 **Sandya Duggana**
 
 Aspiring Data Engineer with experience in Python, SQL, Microsoft Fabric, data pipelines, and enterprise IAM/PAM support.
+
+⭐ Support the Repository
+
+If you find this repository useful:
+
+⭐ Star the repository
+📖 Use the exercises for practice
+💡 Create additional business scenarios
+🔄 Share it with others learning SQL
+💬 Feedback and suggestions are welcome
+
+Repository:
+https://github.com/SandyaDuggana06/SQLForDataEngineering
 
 ---
 
